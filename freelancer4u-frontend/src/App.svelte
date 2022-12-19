@@ -22,7 +22,7 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					{#if $isAuthenticated }
+					{#if $isAuthenticated && $user.user_roles && $user.user_roles.includes("admin") }
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#customers" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							  Kunden

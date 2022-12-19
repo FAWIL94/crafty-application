@@ -17,6 +17,8 @@
 	</properties>
 	<dependencies>
 
+
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -54,7 +56,7 @@
 		        <version>2.7.0</version>
 		        <configuration>
 		            <schemaVersion>v2</schemaVersion>
-		            <subscriptionId></subscriptionId>
+		            <subscriptionId/>
 		            <resourceGroup>application_crafty-1671482648741-rg</resourceGroup>
 		            <appName>application_crafty-1671482648741</appName>
 		            <pricingTier>F1</pricingTier>

@@ -1,9 +1,11 @@
 package ch.zhaw.application_crafty.service;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import ch.zhaw.application_crafty.model.Customer;
 import ch.zhaw.application_crafty.model.Project;
 import ch.zhaw.application_crafty.model.ProjectState;
 import ch.zhaw.application_crafty.repository.CustomerRepository;
@@ -44,6 +46,13 @@ public class ProjectService {
                 projectRepository.save(project);
                 return Optional.of(project);
             }
+        }
+        return Optional.empty();
+    }
+    public Optional<Project> assignProjectByEmail(String projectId, String email){
+        List<Customer> fList = customerRepository.findByEmail(email);
+        if (fList.size() == 1){
+            return assignProject(projectId, fList.get(0).getId());
         }
         return Optional.empty();
     }
