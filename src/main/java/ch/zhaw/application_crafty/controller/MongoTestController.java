@@ -1,5 +1,6 @@
 package ch.zhaw.application_crafty.controller;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.http.HttpStatus;
