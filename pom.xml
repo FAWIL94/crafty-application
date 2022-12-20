@@ -56,11 +56,13 @@
 		        <version>2.7.0</version>
 		        <configuration>
 		            <schemaVersion>v2</schemaVersion>
-		            <subscriptionId/>
-		            <resourceGroup>application_crafty-1671482648741-rg</resourceGroup>
-		            <appName>application_crafty-1671482648741</appName>
-		            <pricingTier>F1</pricingTier>
+		            <subscriptionId>6a36b680-97aa-4b20-8924-7f5bb578de45</subscriptionId>
+		            <resourceGroup>crafty-application_group</resourceGroup>
+		            <appName>crafty-application</appName>
+		            <pricingTier>B1</pricingTier>
 		            <region>centralus</region>
+		            <appServicePlanName>ASP-craftyapplicationgroup-b8ad</appServicePlanName>
+		            <appServicePlanResourceGroup>crafty-application_group</appServicePlanResourceGroup>
 		            <runtime>
 		                <os>Linux</os>
 		                <javaVersion>Java 17</javaVersion>
